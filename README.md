@@ -1,3 +1,7 @@
+_This repo has been forked from [cdk-nextjs-export-s3-dynamic-routing](https://github.com/dkershner6/cdk-nextjs-export-s3-dynamic-routing) mainly to re-publish it for Java_
+
+---
+
 # Next.js Static Export S3 Site with Dynamic Routing
 
 [NPM](https://www.npmjs.com/package/nextjs-export-cdk)
