@@ -76,7 +76,7 @@ There are no outside requirements for this construct, and it will delete all of 
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NextjsExportS3DynamicRoutingSite <a name="NextjsExportS3DynamicRoutingSite" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite"></a>
+### NextjsExportS3DynamicRoutingSite <a name="NextjsExportS3DynamicRoutingSite" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite"></a>
 
 Deploy an exported, static site using Next.js. Compatible with a Next 13 project using /pages routing.
 
@@ -90,37 +90,37 @@ Additional Limitations:
 - Cloudfront function size is capped at 10KB. This may be exceeded if the amount of pages (page types, not static pages with many static paths) is extremely large, as each represents a JSON object in the code.
 - For estimation, if we assume around 1000 characters of natural overhead and average 100 characters per page type, this calculates to about 90 page types (files in the pages folder).)
 
-#### Initializers <a name="Initializers" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer"></a>
+#### Initializers <a name="Initializers" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer"></a>
 
 ```typescript
-import { NextjsExportS3DynamicRoutingSite } from 'cdk-nextjs-export-s3-dynamic-routing'
+import { NextjsExportS3DynamicRoutingSite } from 'nextjs-export-cdk'
 
 new NextjsExportS3DynamicRoutingSite(scope: Construct, id: string, props: NextjsExportS3DynamicRoutingSiteProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps">NextjsExportS3DynamicRoutingSiteProps</a></code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer.parameter.props">props</a></code> | <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps">NextjsExportS3DynamicRoutingSiteProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps">NextjsExportS3DynamicRoutingSiteProps</a>
+- *Type:* <a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps">NextjsExportS3DynamicRoutingSiteProps</a>
 
 ---
 
@@ -128,11 +128,11 @@ new NextjsExportS3DynamicRoutingSite(scope: Construct, id: string, props: Nextjs
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.toString"></a>
+##### `toString` <a name="toString" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.toString"></a>
 
 ```typescript
 public toString(): string
@@ -144,21 +144,21 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.isConstruct"></a>
 
 ```typescript
-import { NextjsExportS3DynamicRoutingSite } from 'cdk-nextjs-export-s3-dynamic-routing'
+import { NextjsExportS3DynamicRoutingSite } from 'nextjs-export-cdk'
 
 NextjsExportS3DynamicRoutingSite.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -170,14 +170,14 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.cloudfrontDistribution">cloudfrontDistribution</a></code> | <code>aws-cdk-lib.aws_cloudfront.Distribution</code> | *No description.* |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.s3Bucket">s3Bucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | *No description.* |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.viewerRequestCloudfrontFunction">viewerRequestCloudfrontFunction</a></code> | <code>aws-cdk-lib.aws_cloudfront.Function</code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.cloudfrontDistribution">cloudfrontDistribution</a></code> | <code>aws-cdk-lib.aws_cloudfront.Distribution</code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.s3Bucket">s3Bucket</a></code> | <code>aws-cdk-lib.aws_s3.Bucket</code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.viewerRequestCloudfrontFunction">viewerRequestCloudfrontFunction</a></code> | <code>aws-cdk-lib.aws_cloudfront.Function</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -189,7 +189,7 @@ The tree node.
 
 ---
 
-##### `cloudfrontDistribution`<sup>Required</sup> <a name="cloudfrontDistribution" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.cloudfrontDistribution"></a>
+##### `cloudfrontDistribution`<sup>Required</sup> <a name="cloudfrontDistribution" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.cloudfrontDistribution"></a>
 
 ```typescript
 public readonly cloudfrontDistribution: Distribution;
@@ -199,7 +199,7 @@ public readonly cloudfrontDistribution: Distribution;
 
 ---
 
-##### `s3Bucket`<sup>Required</sup> <a name="s3Bucket" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.s3Bucket"></a>
+##### `s3Bucket`<sup>Required</sup> <a name="s3Bucket" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.s3Bucket"></a>
 
 ```typescript
 public readonly s3Bucket: Bucket;
@@ -209,7 +209,7 @@ public readonly s3Bucket: Bucket;
 
 ---
 
-##### `viewerRequestCloudfrontFunction`<sup>Required</sup> <a name="viewerRequestCloudfrontFunction" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.viewerRequestCloudfrontFunction"></a>
+##### `viewerRequestCloudfrontFunction`<sup>Required</sup> <a name="viewerRequestCloudfrontFunction" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.viewerRequestCloudfrontFunction"></a>
 
 ```typescript
 public readonly viewerRequestCloudfrontFunction: Function;
@@ -223,11 +223,11 @@ public readonly viewerRequestCloudfrontFunction: Function;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.RECOMMENDED_CACHE_POLICY">RECOMMENDED_CACHE_POLICY</a></code> | <code>aws-cdk-lib.aws_cloudfront.CachePolicyProps</code> | Included for convenience, this cache policy is very similar to Amplify's cache policy, but with a higher maxTtl. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.RECOMMENDED_CACHE_POLICY">RECOMMENDED_CACHE_POLICY</a></code> | <code>aws-cdk-lib.aws_cloudfront.CachePolicyProps</code> | Included for convenience, this cache policy is very similar to Amplify's cache policy, but with a higher maxTtl. |
 
 ---
 
-##### `RECOMMENDED_CACHE_POLICY`<sup>Required</sup> <a name="RECOMMENDED_CACHE_POLICY" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSite.property.RECOMMENDED_CACHE_POLICY"></a>
+##### `RECOMMENDED_CACHE_POLICY`<sup>Required</sup> <a name="RECOMMENDED_CACHE_POLICY" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSite.property.RECOMMENDED_CACHE_POLICY"></a>
 
 ```typescript
 public readonly RECOMMENDED_CACHE_POLICY: CachePolicyProps;
@@ -241,14 +241,14 @@ Included for convenience, this cache policy is very similar to Amplify's cache p
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NextjsExportS3DynamicRoutingDistributionProps <a name="NextjsExportS3DynamicRoutingDistributionProps" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps"></a>
+### NextjsExportS3DynamicRoutingDistributionProps <a name="NextjsExportS3DynamicRoutingDistributionProps" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps"></a>
 
 Differences from cloudfront.DistributionProps: - defaultBehavior is optional.
 
-#### Initializer <a name="Initializer" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.Initializer"></a>
 
 ```typescript
-import { NextjsExportS3DynamicRoutingDistributionProps } from 'cdk-nextjs-export-s3-dynamic-routing'
+import { NextjsExportS3DynamicRoutingDistributionProps } from 'nextjs-export-cdk'
 
 const nextjsExportS3DynamicRoutingDistributionProps: NextjsExportS3DynamicRoutingDistributionProps = { ... }
 ```
@@ -257,29 +257,29 @@ const nextjsExportS3DynamicRoutingDistributionProps: NextjsExportS3DynamicRoutin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.additionalBehaviors">additionalBehaviors</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_cloudfront.BehaviorOptions}</code> | Additional behaviors for the distribution, mapped by the pathPattern that specifies which requests to apply the behavior to. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.certificate">certificate</a></code> | <code>aws-cdk-lib.aws_certificatemanager.ICertificate</code> | A certificate to associate with the distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.comment">comment</a></code> | <code>string</code> | Any comments you want to include about the distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.defaultBehavior">defaultBehavior</a></code> | <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions">PartialBehaviorOptions</a></code> | The default behavior for the distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.defaultRootObject">defaultRootObject</a></code> | <code>string</code> | The object that you want CloudFront to request from your origin (for example, index.html) when a viewer requests the root URL for your distribution. If no default object is set, the request goes to the origin's root (e.g., example.com/). |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.domainNames">domainNames</a></code> | <code>string[]</code> | Alternative domain names for this distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.enabled">enabled</a></code> | <code>boolean</code> | Enable or disable the distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.enableIpv6">enableIpv6</a></code> | <code>boolean</code> | Whether CloudFront will respond to IPv6 DNS requests with an IPv6 address. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.enableLogging">enableLogging</a></code> | <code>boolean</code> | Enable access logging for the distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.errorResponses">errorResponses</a></code> | <code>aws-cdk-lib.aws_cloudfront.ErrorResponse[]</code> | How CloudFront should handle requests that are not successful (e.g., PageNotFound). |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.geoRestriction">geoRestriction</a></code> | <code>aws-cdk-lib.aws_cloudfront.GeoRestriction</code> | Controls the countries in which your content is distributed. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.httpVersion">httpVersion</a></code> | <code>aws-cdk-lib.aws_cloudfront.HttpVersion</code> | Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.logBucket">logBucket</a></code> | <code>aws-cdk-lib.aws_s3.IBucket</code> | The Amazon S3 bucket to store the access logs in. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.logFilePrefix">logFilePrefix</a></code> | <code>string</code> | An optional string that you want CloudFront to prefix to the access log filenames for this distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.logIncludesCookies">logIncludesCookies</a></code> | <code>boolean</code> | Specifies whether you want CloudFront to include cookies in access logs. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.minimumProtocolVersion">minimumProtocolVersion</a></code> | <code>aws-cdk-lib.aws_cloudfront.SecurityPolicyProtocol</code> | The minimum version of the SSL protocol that you want CloudFront to use for HTTPS connections. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.priceClass">priceClass</a></code> | <code>aws-cdk-lib.aws_cloudfront.PriceClass</code> | The price class that corresponds with the maximum price that you want to pay for CloudFront service. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.sslSupportMethod">sslSupportMethod</a></code> | <code>aws-cdk-lib.aws_cloudfront.SSLMethod</code> | The SSL method CloudFront will use for your distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.webAclId">webAclId</a></code> | <code>string</code> | Unique identifier that specifies the AWS WAF web ACL to associate with this CloudFront distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.additionalBehaviors">additionalBehaviors</a></code> | <code>{[ key: string ]: aws-cdk-lib.aws_cloudfront.BehaviorOptions}</code> | Additional behaviors for the distribution, mapped by the pathPattern that specifies which requests to apply the behavior to. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.certificate">certificate</a></code> | <code>aws-cdk-lib.aws_certificatemanager.ICertificate</code> | A certificate to associate with the distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.comment">comment</a></code> | <code>string</code> | Any comments you want to include about the distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.defaultBehavior">defaultBehavior</a></code> | <code><a href="#nextjs-export-cdk.PartialBehaviorOptions">PartialBehaviorOptions</a></code> | The default behavior for the distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.defaultRootObject">defaultRootObject</a></code> | <code>string</code> | The object that you want CloudFront to request from your origin (for example, index.html) when a viewer requests the root URL for your distribution. If no default object is set, the request goes to the origin's root (e.g., example.com/). |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.domainNames">domainNames</a></code> | <code>string[]</code> | Alternative domain names for this distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.enabled">enabled</a></code> | <code>boolean</code> | Enable or disable the distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.enableIpv6">enableIpv6</a></code> | <code>boolean</code> | Whether CloudFront will respond to IPv6 DNS requests with an IPv6 address. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.enableLogging">enableLogging</a></code> | <code>boolean</code> | Enable access logging for the distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.errorResponses">errorResponses</a></code> | <code>aws-cdk-lib.aws_cloudfront.ErrorResponse[]</code> | How CloudFront should handle requests that are not successful (e.g., PageNotFound). |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.geoRestriction">geoRestriction</a></code> | <code>aws-cdk-lib.aws_cloudfront.GeoRestriction</code> | Controls the countries in which your content is distributed. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.httpVersion">httpVersion</a></code> | <code>aws-cdk-lib.aws_cloudfront.HttpVersion</code> | Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.logBucket">logBucket</a></code> | <code>aws-cdk-lib.aws_s3.IBucket</code> | The Amazon S3 bucket to store the access logs in. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.logFilePrefix">logFilePrefix</a></code> | <code>string</code> | An optional string that you want CloudFront to prefix to the access log filenames for this distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.logIncludesCookies">logIncludesCookies</a></code> | <code>boolean</code> | Specifies whether you want CloudFront to include cookies in access logs. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.minimumProtocolVersion">minimumProtocolVersion</a></code> | <code>aws-cdk-lib.aws_cloudfront.SecurityPolicyProtocol</code> | The minimum version of the SSL protocol that you want CloudFront to use for HTTPS connections. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.priceClass">priceClass</a></code> | <code>aws-cdk-lib.aws_cloudfront.PriceClass</code> | The price class that corresponds with the maximum price that you want to pay for CloudFront service. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.sslSupportMethod">sslSupportMethod</a></code> | <code>aws-cdk-lib.aws_cloudfront.SSLMethod</code> | The SSL method CloudFront will use for your distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.webAclId">webAclId</a></code> | <code>string</code> | Unique identifier that specifies the AWS WAF web ACL to associate with this CloudFront distribution. |
 
 ---
 
-##### `additionalBehaviors`<sup>Optional</sup> <a name="additionalBehaviors" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.additionalBehaviors"></a>
+##### `additionalBehaviors`<sup>Optional</sup> <a name="additionalBehaviors" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.additionalBehaviors"></a>
 
 ```typescript
 public readonly additionalBehaviors: {[ key: string ]: BehaviorOptions};
@@ -292,7 +292,7 @@ Additional behaviors for the distribution, mapped by the pathPattern that specif
 
 ---
 
-##### `certificate`<sup>Optional</sup> <a name="certificate" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.certificate"></a>
+##### `certificate`<sup>Optional</sup> <a name="certificate" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.certificate"></a>
 
 ```typescript
 public readonly certificate: ICertificate;
@@ -307,7 +307,7 @@ The certificate must be located in N. Virginia (us-east-1).
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -320,13 +320,13 @@ Any comments you want to include about the distribution.
 
 ---
 
-##### `defaultBehavior`<sup>Optional</sup> <a name="defaultBehavior" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.defaultBehavior"></a>
+##### `defaultBehavior`<sup>Optional</sup> <a name="defaultBehavior" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.defaultBehavior"></a>
 
 ```typescript
 public readonly defaultBehavior: PartialBehaviorOptions;
 ```
 
-- *Type:* <a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions">PartialBehaviorOptions</a>
+- *Type:* <a href="#nextjs-export-cdk.PartialBehaviorOptions">PartialBehaviorOptions</a>
 
 The default behavior for the distribution.
 
@@ -334,7 +334,7 @@ Optional and Partial here, not usually either in the CDK.
 
 ---
 
-##### `defaultRootObject`<sup>Optional</sup> <a name="defaultRootObject" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.defaultRootObject"></a>
+##### `defaultRootObject`<sup>Optional</sup> <a name="defaultRootObject" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.defaultRootObject"></a>
 
 ```typescript
 public readonly defaultRootObject: string;
@@ -347,7 +347,7 @@ The object that you want CloudFront to request from your origin (for example, in
 
 ---
 
-##### `domainNames`<sup>Optional</sup> <a name="domainNames" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.domainNames"></a>
+##### `domainNames`<sup>Optional</sup> <a name="domainNames" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.domainNames"></a>
 
 ```typescript
 public readonly domainNames: string[];
@@ -364,7 +364,7 @@ you must add (at least one of) the domain names of the certificate to this list.
 
 ---
 
-##### `enabled`<sup>Optional</sup> <a name="enabled" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.enabled"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.enabled"></a>
 
 ```typescript
 public readonly enabled: boolean;
@@ -377,7 +377,7 @@ Enable or disable the distribution.
 
 ---
 
-##### `enableIpv6`<sup>Optional</sup> <a name="enableIpv6" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.enableIpv6"></a>
+##### `enableIpv6`<sup>Optional</sup> <a name="enableIpv6" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.enableIpv6"></a>
 
 ```typescript
 public readonly enableIpv6: boolean;
@@ -393,7 +393,7 @@ This allows viewers to submit a second request, for an IPv4 address for your dis
 
 ---
 
-##### `enableLogging`<sup>Optional</sup> <a name="enableLogging" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.enableLogging"></a>
+##### `enableLogging`<sup>Optional</sup> <a name="enableLogging" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.enableLogging"></a>
 
 ```typescript
 public readonly enableLogging: boolean;
@@ -406,7 +406,7 @@ Enable access logging for the distribution.
 
 ---
 
-##### `errorResponses`<sup>Optional</sup> <a name="errorResponses" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.errorResponses"></a>
+##### `errorResponses`<sup>Optional</sup> <a name="errorResponses" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.errorResponses"></a>
 
 ```typescript
 public readonly errorResponses: ErrorResponse[];
@@ -419,7 +419,7 @@ How CloudFront should handle requests that are not successful (e.g., PageNotFoun
 
 ---
 
-##### `geoRestriction`<sup>Optional</sup> <a name="geoRestriction" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.geoRestriction"></a>
+##### `geoRestriction`<sup>Optional</sup> <a name="geoRestriction" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.geoRestriction"></a>
 
 ```typescript
 public readonly geoRestriction: GeoRestriction;
@@ -432,7 +432,7 @@ Controls the countries in which your content is distributed.
 
 ---
 
-##### `httpVersion`<sup>Optional</sup> <a name="httpVersion" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.httpVersion"></a>
+##### `httpVersion`<sup>Optional</sup> <a name="httpVersion" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.httpVersion"></a>
 
 ```typescript
 public readonly httpVersion: HttpVersion;
@@ -447,7 +447,7 @@ For viewers and CloudFront to use HTTP/2, viewers must support TLS 1.2 or later,
 
 ---
 
-##### `logBucket`<sup>Optional</sup> <a name="logBucket" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.logBucket"></a>
+##### `logBucket`<sup>Optional</sup> <a name="logBucket" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.logBucket"></a>
 
 ```typescript
 public readonly logBucket: IBucket;
@@ -462,7 +462,7 @@ Make sure to set `objectOwnership` to `s3.ObjectOwnership.OBJECT_WRITER` in your
 
 ---
 
-##### `logFilePrefix`<sup>Optional</sup> <a name="logFilePrefix" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.logFilePrefix"></a>
+##### `logFilePrefix`<sup>Optional</sup> <a name="logFilePrefix" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.logFilePrefix"></a>
 
 ```typescript
 public readonly logFilePrefix: string;
@@ -475,7 +475,7 @@ An optional string that you want CloudFront to prefix to the access log filename
 
 ---
 
-##### `logIncludesCookies`<sup>Optional</sup> <a name="logIncludesCookies" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.logIncludesCookies"></a>
+##### `logIncludesCookies`<sup>Optional</sup> <a name="logIncludesCookies" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.logIncludesCookies"></a>
 
 ```typescript
 public readonly logIncludesCookies: boolean;
@@ -488,7 +488,7 @@ Specifies whether you want CloudFront to include cookies in access logs.
 
 ---
 
-##### `minimumProtocolVersion`<sup>Optional</sup> <a name="minimumProtocolVersion" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.minimumProtocolVersion"></a>
+##### `minimumProtocolVersion`<sup>Optional</sup> <a name="minimumProtocolVersion" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.minimumProtocolVersion"></a>
 
 ```typescript
 public readonly minimumProtocolVersion: SecurityPolicyProtocol;
@@ -504,7 +504,7 @@ least the SSL version that you specify.
 
 ---
 
-##### `priceClass`<sup>Optional</sup> <a name="priceClass" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.priceClass"></a>
+##### `priceClass`<sup>Optional</sup> <a name="priceClass" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.priceClass"></a>
 
 ```typescript
 public readonly priceClass: PriceClass;
@@ -521,7 +521,7 @@ that has the lowest latency among the edge locations in your price class.
 
 ---
 
-##### `sslSupportMethod`<sup>Optional</sup> <a name="sslSupportMethod" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.sslSupportMethod"></a>
+##### `sslSupportMethod`<sup>Optional</sup> <a name="sslSupportMethod" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.sslSupportMethod"></a>
 
 ```typescript
 public readonly sslSupportMethod: SSLMethod;
@@ -546,7 +546,7 @@ See the CloudFront SSL for more details about pricing : https://aws.amazon.com/c
 
 ---
 
-##### `webAclId`<sup>Optional</sup> <a name="webAclId" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps.property.webAclId"></a>
+##### `webAclId`<sup>Optional</sup> <a name="webAclId" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps.property.webAclId"></a>
 
 ```typescript
 public readonly webAclId: string;
@@ -565,7 +565,7 @@ To specify a web ACL created using AWS WAF Classic, use the ACL ID, for example 
 
 ---
 
-### NextjsExportS3DynamicRoutingSiteProps <a name="NextjsExportS3DynamicRoutingSiteProps" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps"></a>
+### NextjsExportS3DynamicRoutingSiteProps <a name="NextjsExportS3DynamicRoutingSiteProps" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps"></a>
 
 Deploy a static export Next.js site to Cloudfront and S3 while maintaining the ability to use dynamic routes.
 
@@ -573,10 +573,10 @@ Deploys Cloudfront, a Cloudfront Function, an S3 Bucket, and an S3 Deployment.
 
 With defaults set, if this construct is removed, all resources will be cleaned up.
 
-#### Initializer <a name="Initializer" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.Initializer"></a>
 
 ```typescript
-import { NextjsExportS3DynamicRoutingSiteProps } from 'cdk-nextjs-export-s3-dynamic-routing'
+import { NextjsExportS3DynamicRoutingSiteProps } from 'nextjs-export-cdk'
 
 const nextjsExportS3DynamicRoutingSiteProps: NextjsExportS3DynamicRoutingSiteProps = { ... }
 ```
@@ -585,15 +585,15 @@ const nextjsExportS3DynamicRoutingSiteProps: NextjsExportS3DynamicRoutingSitePro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.bucketProps">bucketProps</a></code> | <code>aws-cdk-lib.aws_s3.BucketProps</code> | Passthrough props to customize the S3 bucket. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.distributionProps">distributionProps</a></code> | <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps">NextjsExportS3DynamicRoutingDistributionProps</a></code> | Passthrough props to customize the Cloudfront distribution. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.nextBuildDir">nextBuildDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.nextExportPath">nextExportPath</a></code> | <code>string</code> | The relative path to the Next.js project. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.s3OriginProps">s3OriginProps</a></code> | <code>aws-cdk-lib.aws_cloudfront_origins.S3OriginProps</code> | Passthrough props to customize the S3 Origin. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.bucketProps">bucketProps</a></code> | <code>aws-cdk-lib.aws_s3.BucketProps</code> | Passthrough props to customize the S3 bucket. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.distributionProps">distributionProps</a></code> | <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps">NextjsExportS3DynamicRoutingDistributionProps</a></code> | Passthrough props to customize the Cloudfront distribution. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.nextBuildDir">nextBuildDir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.nextExportPath">nextExportPath</a></code> | <code>string</code> | The relative path to the Next.js project. |
+| <code><a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.s3OriginProps">s3OriginProps</a></code> | <code>aws-cdk-lib.aws_cloudfront_origins.S3OriginProps</code> | Passthrough props to customize the S3 Origin. |
 
 ---
 
-##### `bucketProps`<sup>Optional</sup> <a name="bucketProps" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.bucketProps"></a>
+##### `bucketProps`<sup>Optional</sup> <a name="bucketProps" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.bucketProps"></a>
 
 ```typescript
 public readonly bucketProps: BucketProps;
@@ -606,20 +606,20 @@ Passthrough props to customize the S3 bucket.
 
 ---
 
-##### `distributionProps`<sup>Optional</sup> <a name="distributionProps" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.distributionProps"></a>
+##### `distributionProps`<sup>Optional</sup> <a name="distributionProps" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.distributionProps"></a>
 
 ```typescript
 public readonly distributionProps: NextjsExportS3DynamicRoutingDistributionProps;
 ```
 
-- *Type:* <a href="#cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingDistributionProps">NextjsExportS3DynamicRoutingDistributionProps</a>
+- *Type:* <a href="#nextjs-export-cdk.NextjsExportS3DynamicRoutingDistributionProps">NextjsExportS3DynamicRoutingDistributionProps</a>
 - *Default:* Sets up the S3 Origin and Cache Policy.
 
 Passthrough props to customize the Cloudfront distribution.
 
 ---
 
-##### `nextBuildDir`<sup>Optional</sup> <a name="nextBuildDir" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.nextBuildDir"></a>
+##### `nextBuildDir`<sup>Optional</sup> <a name="nextBuildDir" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.nextBuildDir"></a>
 
 ```typescript
 public readonly nextBuildDir: string;
@@ -630,7 +630,7 @@ public readonly nextBuildDir: string;
 
 ---
 
-##### `nextExportPath`<sup>Optional</sup> <a name="nextExportPath" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.nextExportPath"></a>
+##### `nextExportPath`<sup>Optional</sup> <a name="nextExportPath" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.nextExportPath"></a>
 
 ```typescript
 public readonly nextExportPath: string;
@@ -643,7 +643,7 @@ The relative path to the Next.js project.
 
 ---
 
-##### `s3OriginProps`<sup>Optional</sup> <a name="s3OriginProps" id="cdk-nextjs-export-s3-dynamic-routing.NextjsExportS3DynamicRoutingSiteProps.property.s3OriginProps"></a>
+##### `s3OriginProps`<sup>Optional</sup> <a name="s3OriginProps" id="nextjs-export-cdk.NextjsExportS3DynamicRoutingSiteProps.property.s3OriginProps"></a>
 
 ```typescript
 public readonly s3OriginProps: S3OriginProps;
@@ -656,16 +656,16 @@ Passthrough props to customize the S3 Origin.
 
 ---
 
-### PartialBehaviorOptions <a name="PartialBehaviorOptions" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions"></a>
+### PartialBehaviorOptions <a name="PartialBehaviorOptions" id="nextjs-export-cdk.PartialBehaviorOptions"></a>
 
 Options for creating a new behavior.
 
 origin is optional here, not usually in the CDK.
 
-#### Initializer <a name="Initializer" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="nextjs-export-cdk.PartialBehaviorOptions.Initializer"></a>
 
 ```typescript
-import { PartialBehaviorOptions } from 'cdk-nextjs-export-s3-dynamic-routing'
+import { PartialBehaviorOptions } from 'nextjs-export-cdk'
 
 const partialBehaviorOptions: PartialBehaviorOptions = { ... }
 ```
@@ -674,22 +674,23 @@ const partialBehaviorOptions: PartialBehaviorOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.allowedMethods">allowedMethods</a></code> | <code>aws-cdk-lib.aws_cloudfront.AllowedMethods</code> | HTTP methods to allow for this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.cachedMethods">cachedMethods</a></code> | <code>aws-cdk-lib.aws_cloudfront.CachedMethods</code> | HTTP methods to cache for this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.cachePolicy">cachePolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | The cache policy for this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.compress">compress</a></code> | <code>boolean</code> | Whether you want CloudFront to automatically compress certain files for this cache behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.edgeLambdas">edgeLambdas</a></code> | <code>aws-cdk-lib.aws_cloudfront.EdgeLambda[]</code> | The Lambda@Edge functions to invoke before serving the contents. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.functionAssociations">functionAssociations</a></code> | <code>aws-cdk-lib.aws_cloudfront.FunctionAssociation[]</code> | The CloudFront functions to invoke before serving the contents. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.originRequestPolicy">originRequestPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.IOriginRequestPolicy</code> | The origin request policy for this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.responseHeadersPolicy">responseHeadersPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | The response headers policy for this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.smoothStreaming">smoothStreaming</a></code> | <code>boolean</code> | Set this to true to indicate you want to distribute media files in the Microsoft Smooth Streaming format using this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code>aws-cdk-lib.aws_cloudfront.IKeyGroup[]</code> | A list of Key Groups that CloudFront can use to validate signed URLs or signed cookies. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.viewerProtocolPolicy">viewerProtocolPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.ViewerProtocolPolicy</code> | The protocol that viewers can use to access the files controlled by this behavior. |
-| <code><a href="#cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.origin">origin</a></code> | <code>aws-cdk-lib.aws_cloudfront.IOrigin</code> | The origin that you want CloudFront to route requests to when they match this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.allowedMethods">allowedMethods</a></code> | <code>aws-cdk-lib.aws_cloudfront.AllowedMethods</code> | HTTP methods to allow for this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.cachedMethods">cachedMethods</a></code> | <code>aws-cdk-lib.aws_cloudfront.CachedMethods</code> | HTTP methods to cache for this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.cachePolicy">cachePolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.ICachePolicy</code> | The cache policy for this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.compress">compress</a></code> | <code>boolean</code> | Whether you want CloudFront to automatically compress certain files for this cache behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.edgeLambdas">edgeLambdas</a></code> | <code>aws-cdk-lib.aws_cloudfront.EdgeLambda[]</code> | The Lambda@Edge functions to invoke before serving the contents. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.functionAssociations">functionAssociations</a></code> | <code>aws-cdk-lib.aws_cloudfront.FunctionAssociation[]</code> | The CloudFront functions to invoke before serving the contents. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.originRequestPolicy">originRequestPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.IOriginRequestPolicy</code> | The origin request policy for this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.realtimeLogConfig">realtimeLogConfig</a></code> | <code>aws-cdk-lib.aws_cloudfront.IRealtimeLogConfig</code> | The real-time log configuration to be attached to this cache behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.responseHeadersPolicy">responseHeadersPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.IResponseHeadersPolicy</code> | The response headers policy for this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.smoothStreaming">smoothStreaming</a></code> | <code>boolean</code> | Set this to true to indicate you want to distribute media files in the Microsoft Smooth Streaming format using this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code>aws-cdk-lib.aws_cloudfront.IKeyGroup[]</code> | A list of Key Groups that CloudFront can use to validate signed URLs or signed cookies. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.viewerProtocolPolicy">viewerProtocolPolicy</a></code> | <code>aws-cdk-lib.aws_cloudfront.ViewerProtocolPolicy</code> | The protocol that viewers can use to access the files controlled by this behavior. |
+| <code><a href="#nextjs-export-cdk.PartialBehaviorOptions.property.origin">origin</a></code> | <code>aws-cdk-lib.aws_cloudfront.IOrigin</code> | The origin that you want CloudFront to route requests to when they match this behavior. |
 
 ---
 
-##### `allowedMethods`<sup>Optional</sup> <a name="allowedMethods" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.allowedMethods"></a>
+##### `allowedMethods`<sup>Optional</sup> <a name="allowedMethods" id="nextjs-export-cdk.PartialBehaviorOptions.property.allowedMethods"></a>
 
 ```typescript
 public readonly allowedMethods: AllowedMethods;
@@ -702,7 +703,7 @@ HTTP methods to allow for this behavior.
 
 ---
 
-##### `cachedMethods`<sup>Optional</sup> <a name="cachedMethods" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.cachedMethods"></a>
+##### `cachedMethods`<sup>Optional</sup> <a name="cachedMethods" id="nextjs-export-cdk.PartialBehaviorOptions.property.cachedMethods"></a>
 
 ```typescript
 public readonly cachedMethods: CachedMethods;
@@ -715,7 +716,7 @@ HTTP methods to cache for this behavior.
 
 ---
 
-##### `cachePolicy`<sup>Optional</sup> <a name="cachePolicy" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.cachePolicy"></a>
+##### `cachePolicy`<sup>Optional</sup> <a name="cachePolicy" id="nextjs-export-cdk.PartialBehaviorOptions.property.cachePolicy"></a>
 
 ```typescript
 public readonly cachePolicy: ICachePolicy;
@@ -733,7 +734,7 @@ and the time-to-live (TTL) values for the cache.
 
 ---
 
-##### `compress`<sup>Optional</sup> <a name="compress" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.compress"></a>
+##### `compress`<sup>Optional</sup> <a name="compress" id="nextjs-export-cdk.PartialBehaviorOptions.property.compress"></a>
 
 ```typescript
 public readonly compress: boolean;
@@ -749,7 +750,7 @@ for file types CloudFront will compress.
 
 ---
 
-##### `edgeLambdas`<sup>Optional</sup> <a name="edgeLambdas" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.edgeLambdas"></a>
+##### `edgeLambdas`<sup>Optional</sup> <a name="edgeLambdas" id="nextjs-export-cdk.PartialBehaviorOptions.property.edgeLambdas"></a>
 
 ```typescript
 public readonly edgeLambdas: EdgeLambda[];
@@ -764,7 +765,7 @@ The Lambda@Edge functions to invoke before serving the contents.
 
 ---
 
-##### `functionAssociations`<sup>Optional</sup> <a name="functionAssociations" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.functionAssociations"></a>
+##### `functionAssociations`<sup>Optional</sup> <a name="functionAssociations" id="nextjs-export-cdk.PartialBehaviorOptions.property.functionAssociations"></a>
 
 ```typescript
 public readonly functionAssociations: FunctionAssociation[];
@@ -777,7 +778,7 @@ The CloudFront functions to invoke before serving the contents.
 
 ---
 
-##### `originRequestPolicy`<sup>Optional</sup> <a name="originRequestPolicy" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.originRequestPolicy"></a>
+##### `originRequestPolicy`<sup>Optional</sup> <a name="originRequestPolicy" id="nextjs-export-cdk.PartialBehaviorOptions.property.originRequestPolicy"></a>
 
 ```typescript
 public readonly originRequestPolicy: IOriginRequestPolicy;
@@ -793,7 +794,20 @@ are included in requests that CloudFront sends to the origin.
 
 ---
 
-##### `responseHeadersPolicy`<sup>Optional</sup> <a name="responseHeadersPolicy" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.responseHeadersPolicy"></a>
+##### `realtimeLogConfig`<sup>Optional</sup> <a name="realtimeLogConfig" id="nextjs-export-cdk.PartialBehaviorOptions.property.realtimeLogConfig"></a>
+
+```typescript
+public readonly realtimeLogConfig: IRealtimeLogConfig;
+```
+
+- *Type:* aws-cdk-lib.aws_cloudfront.IRealtimeLogConfig
+- *Default:* none
+
+The real-time log configuration to be attached to this cache behavior.
+
+---
+
+##### `responseHeadersPolicy`<sup>Optional</sup> <a name="responseHeadersPolicy" id="nextjs-export-cdk.PartialBehaviorOptions.property.responseHeadersPolicy"></a>
 
 ```typescript
 public readonly responseHeadersPolicy: IResponseHeadersPolicy;
@@ -808,7 +822,7 @@ The response headers policy determines which headers are included in responses
 
 ---
 
-##### `smoothStreaming`<sup>Optional</sup> <a name="smoothStreaming" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.smoothStreaming"></a>
+##### `smoothStreaming`<sup>Optional</sup> <a name="smoothStreaming" id="nextjs-export-cdk.PartialBehaviorOptions.property.smoothStreaming"></a>
 
 ```typescript
 public readonly smoothStreaming: boolean;
@@ -821,7 +835,7 @@ Set this to true to indicate you want to distribute media files in the Microsoft
 
 ---
 
-##### `trustedKeyGroups`<sup>Optional</sup> <a name="trustedKeyGroups" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.trustedKeyGroups"></a>
+##### `trustedKeyGroups`<sup>Optional</sup> <a name="trustedKeyGroups" id="nextjs-export-cdk.PartialBehaviorOptions.property.trustedKeyGroups"></a>
 
 ```typescript
 public readonly trustedKeyGroups: IKeyGroup[];
@@ -836,7 +850,7 @@ A list of Key Groups that CloudFront can use to validate signed URLs or signed c
 
 ---
 
-##### `viewerProtocolPolicy`<sup>Optional</sup> <a name="viewerProtocolPolicy" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.viewerProtocolPolicy"></a>
+##### `viewerProtocolPolicy`<sup>Optional</sup> <a name="viewerProtocolPolicy" id="nextjs-export-cdk.PartialBehaviorOptions.property.viewerProtocolPolicy"></a>
 
 ```typescript
 public readonly viewerProtocolPolicy: ViewerProtocolPolicy;
@@ -849,7 +863,7 @@ The protocol that viewers can use to access the files controlled by this behavio
 
 ---
 
-##### `origin`<sup>Optional</sup> <a name="origin" id="cdk-nextjs-export-s3-dynamic-routing.PartialBehaviorOptions.property.origin"></a>
+##### `origin`<sup>Optional</sup> <a name="origin" id="nextjs-export-cdk.PartialBehaviorOptions.property.origin"></a>
 
 ```typescript
 public readonly origin: IOrigin;

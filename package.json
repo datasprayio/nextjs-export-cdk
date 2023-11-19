@@ -1,9 +1,9 @@
 {
-  "name": "cdk-nextjs-export-s3-dynamic-routing",
+  "name": "nextjs-export-cdk",
   "description": "Deploy a static export Next.js site to Cloudfront and S3 while maintaining the ability to use dynamic routes.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dkershner6/cdk-nextjs-export-s3-dynamic-routing.git"
+    "url": "https://github.com/datasprayio/nextjs-export-cdk"
   },
   "scripts": {
     "build": "npx projen build",
@@ -17,6 +17,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
@@ -30,8 +31,8 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "Derek Kershner",
-    "url": "https://dkershner.com",
+    "name": "Dataspray",
+    "email": "matus@matus.io",
     "organization": false
   },
   "devDependencies": {
@@ -41,7 +42,7 @@
     "@types/uglify-js": "^3.17.1",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.77.0",
+    "aws-cdk-lib": "2.105.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.7",
@@ -61,7 +62,7 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.77.0",
+    "aws-cdk-lib": "^2.105.0",
     "constructs": "^10.0.5"
   },
   "dependencies": {
@@ -122,7 +123,15 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "java": {
+        "package": "io.dataspray.nextexportcdk",
+        "maven": {
+          "groupId": "io.dataspray",
+          "artifactId": "next-export-cdk"
+        }
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
