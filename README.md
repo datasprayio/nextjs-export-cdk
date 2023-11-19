@@ -1,10 +1,10 @@
 # Next.js Static Export S3 Site with Dynamic Routing
 
-[NPM](https://www.npmjs.com/package/cdk-nextjs-export-s3-dynamic-routing)
+[NPM](https://www.npmjs.com/package/nextjs-export-cdk)
 
-[![View on Construct Hub](https://constructs.dev/badge?package=cdk-nextjs-export-s3-dynamic-routing)](https://constructs.dev/packages/cdk-nextjs-export-s3-dynamic-routing)
+[![View on Construct Hub](https://constructs.dev/badge?package=nextjs-export-cdk)](https://constructs.dev/packages/nextjs-export-cdk)
 
-_Have a more complex use case for Next.js 13? Perhaps check out [cdk-nextjs-standalone](https://constructs.dev/packages/cdk-nextjs-standalone)._
+_Have a more complex use case for Next.js 13? Perhaps check out [open-next-cdk](https://constructs.dev/packages/open-next-cdk)._
 
 Deploy a static export Next.js site to Cloudfront and S3 while maintaining the ability to use dynamic routes.
 
