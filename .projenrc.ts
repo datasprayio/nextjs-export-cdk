@@ -3,7 +3,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   majorVersion: 0,
   author: 'Dataspray',
   authorAddress: 'matus@matus.io',
-  cdkVersion: '2.105.0',
+  cdkVersion: '2.115.0',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.0.0',
   name: 'nextjs-export-cdk',
